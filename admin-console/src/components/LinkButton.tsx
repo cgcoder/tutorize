@@ -10,7 +10,7 @@ export interface LinkButtonProps {
 }
 
 function routeMatches(currentPath: string, to: string): boolean {
-  return to === "/" ? currentPath === "/" : currentPath.startsWith(to);
+  return to === "/console" ? currentPath === "/console" : currentPath.startsWith(to);
 }
 
 export default function LinkButton(props: LinkButtonProps) {
